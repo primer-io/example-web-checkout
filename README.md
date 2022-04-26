@@ -16,9 +16,17 @@ This is a companion project to the [Web Getting Start Guide](#).
 
 <br />
 
+## ✅ Pre-requisites
+
+- **A Primer sandbox account** <br /> No account yet? [Create a sandbox account now!](#) 🚀
+
+- **A handful of programs installed on your machine** <br /> `node`, and `yarn` or `npm`, that's it! 💪
+
+- **5 minutes of your time** <br /> Then you can show your colleagues how powerful Universal Checkout is 😎
+
 ## 🚀 Get Started
 
-### ✔️ Installation
+### 👨‍💻 Installation
 
 Clone this repository:
 
@@ -27,7 +35,7 @@ git clone git@github.com:primer-io/example-web-checkout.git
 cd ./example-web-checkout
 ```
 
-Install the dependencies using `yarn` or `npm`:
+Then install the dependencies using `yarn` or `npm`:
 
 ```bash
 # With yarn
@@ -39,7 +47,7 @@ npm i
 
 ### 🔑 Set up the API Key
 
-Grab your API Key, or create a new API Key, from the [Primer Dashboard](https://dashboard.sandbox.primer.io/developers/apiKeys).
+Grab your API Key, or create a new one, from the [Primer Dashboard](https://dashboard.sandbox.primer.io/developers/apiKeys).
 
 ![Dashboard API Key](./images/apikey.png)
 
@@ -70,12 +78,16 @@ The server is deployed on port `8880` by default. You can change the port by set
 
 ### 💳 Access the checkout
 
-Check the checkout at [http://localhost:8880/](http://localhost:8880/). You should see Universal Checkout appear! 🎉
+Check the checkout at [http://localhost:8880/](http://localhost:8880/).
+
+You should see Universal Checkout appear with the payment methods configured on your [Dashboard](https://dashboard.sandbox.primer.io/checkout)! 🎉
 
 ![Checkout UI](./images/checkout.png)
 
 ## 👀 What's next?
 
+- ✨ Explore the capabilities of your [Dashboard](https//dashboard.sandbox.primer.io/)
 - 📚 Take a look at our [Documentation](https://primer.io/docs) to customize Universal Checkout to better fit your needs
 - 📖 Explore our [Web SDK Reference](https://www.npmjs.com/package/@primer-io/checkout-web) and [Server API Reference](https://apiref.primer.io)
+- 🎒 Learn more about [how Primer works](https://primer.io/docs/how-primer-works)
 - 🤙 Reach out to us at [support@primer.io](support@primer.io) if you are facing any issues
