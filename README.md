@@ -4,17 +4,23 @@
 
 <h3 align="center">
 
-Example integration of Universla Checkout using the [Primer Web SDK](https://primer.io)
-
-This is a companion project to the Web Quick Start Guide.
+Example integration of Universal Checkout using the [Primer Web SDK](https://primer.io)
 
 </h3>
 
 ---
 
-# 🚀 Get Started
+<h4 align="center">
 
-## ✔️ Installation
+This is a companion project to the Web Quick Start Guide.
+
+</p>
+
+---
+
+## 🚀 Get Started
+
+### ✔️ Installation
 
 Clone this repository:
 
@@ -33,7 +39,7 @@ yarn
 npm i
 ```
 
-## 🔑 Set up the API Key
+### 🔑 Set up the API Key
 
 Grab your API Key, or create a new API Key, from [Primer's dashboard](https://dashboard.sandbox.primer.io/developers/apiKeys).
 
@@ -52,7 +58,7 @@ Open `.env` and set the environment variable `API_KEY` with the API key availabl
 API_KEY=1234-1234-1234-1234 # Your Primer API Key
 ```
 
-## 🏃‍♂️ Run the server
+### 🏃‍♂️ Run the server
 
 ```bash
 # With yarn
@@ -64,7 +70,7 @@ npm start
 
 The server is deployed on port `8880` by default. You can change the port by setting the `PORT` environment variable in the `.env` file.
 
-## 💳 Access the checkout
+### 💳 Access the checkout
 
 Check the checkout at [http://localhost:8880/](http://localhost:8880/).
 
