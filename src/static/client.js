@@ -4,7 +4,7 @@ async function onLoaded() {
   const clientSession = await fetch('/client-session', {
     method: 'post',
     headers: { 'Content-Type': 'application/json' },
-  }).then(response => response.json())
+  }).then(data => data.json())
 
   const { clientToken } = clientSession
 
@@ -18,7 +18,7 @@ async function onLoaded() {
      * Implement this callback to redirect the user to an order confirmation page and fulfill the order.
      */
     onCheckoutComplete({ payment }) {
-      alert(`Checkout Complete! Payment ID: ${payment.id}`)
+      console.log("Checkout Complete!", payment)
     },
   })
 }

@@ -58,5 +58,5 @@ app.post("/client-session", async (req, res) => {
 
 
 
-console.log(`Checkout server listening on port ${PORT}.\n\nYou can now view the Checkout in a web browser at http://localhost:${PORT}`);
+console.log(`Checkout server listening on port ${PORT}.\nYou can now view the Checkout in a web browser at http://localhost:${PORT}`);
 app.listen(PORT);
