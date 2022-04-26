@@ -8,8 +8,6 @@ Example integration of Universal Checkout using the [Primer Web SDK](https://pri
 
 </h3>
 
----
-
 <h4 align="center">
 
 This is a companion project to the Web Quick Start Guide.
