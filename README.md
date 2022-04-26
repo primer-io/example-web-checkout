@@ -12,9 +12,7 @@ Example integration of Universal Checkout using the [Primer Web SDK](https://pri
 
 This is a companion project to the [Web Getting Start Guide](#).
 
-</p>
-
----
+</h4>
 
 ## 🚀 Get Started
 
@@ -76,6 +74,6 @@ Check the checkout at [http://localhost:8880/](http://localhost:8880/).
 
 ## 👀 What's next?
 
-- 📚 Take a look at our [Documentation](https://primer.io/docs) to learn more about customizing Universal Checkout to better fit your needs
+- 📚 Take a look at our [Documentation](https://primer.io/docs) to customize Universal Checkout to better fit your needs
 - 📖 Explore our [Web SDK Reference](https://www.npmjs.com/package/@primer-io/checkout-web) and [Server API Reference](https://apiref.primer.io)
 - 🤙 Reach out to us at [support@primer.io](support@primer.io) if you are facing any issues
