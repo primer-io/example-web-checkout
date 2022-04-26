@@ -70,7 +70,7 @@ The server is deployed on port `8880` by default. You can change the port by set
 
 ### 💳 Access the checkout
 
-Check the checkout at [http://localhost:8880/](http://localhost:8880/).
+Check the checkout at [http://localhost:8880/](http://localhost:8880/). You should see Universal Checkout appear! 🎉
 
 ![Checkout UI](./images/checkout.png)
 
