@@ -2,8 +2,6 @@
 
 <h1 align="center"><img src="./images/primer-logo.png" height="24px"> Example Web Checkout</h1>
 
-<br />
-
 <h3 align="center">
 
 Example integration of Universal Checkout using the [Primer Web SDK](https://primer.io)
@@ -15,10 +13,6 @@ Example integration of Universal Checkout using the [Primer Web SDK](https://pri
 This is a companion project to the [Web Getting Start Guide](#).
 
 </h4>
-
-<br />
-
----
 
 <br />
 
