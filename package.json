@@ -1,0 +1,17 @@
+{
+  "name": "primer-integration-walkthrough",
+  "version": "1.0.0",
+  "description": "Build an end-to-end integration with Primer and start accepting payments in 3 simple steps: create a secure checkout using our Universal Checkout, tokenize the payment method and authorize a payment against the payment token.",
+  "main": "server.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "node ./src/server.js"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "node-fetch": "^2.6.1",
+    "path": "^0.12.7"
+  }
+}
