@@ -39,7 +39,7 @@ npm i
 
 ### 🔑 Set up the API Key
 
-Grab your API Key, or create a new API Key, from [Primer's dashboard](https://dashboard.sandbox.primer.io/developers/apiKeys).
+Grab your API Key, or create a new API Key, from the [Primer Dashboard](https://dashboard.sandbox.primer.io/developers/apiKeys).
 
 ![Dashboard API Key](./images/apikey.png)
 
