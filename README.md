@@ -10,7 +10,7 @@ Example integration of Universal Checkout using the [Primer Web SDK](https://pri
 
 <h4 align="center">
 
-This is a companion project to the Web Quick Start Guide.
+This is a companion project to the [Web Getting Start Guide](#).
 
 </p>
 
@@ -73,3 +73,9 @@ The server is deployed on port `8880` by default. You can change the port by set
 Check the checkout at [http://localhost:8880/](http://localhost:8880/).
 
 ![Checkout UI](./images/checkout.png)
+
+## 👀 What's next?
+
+- 📚 Take a look at our [Documentation](https://primer.io/docs) to learn more about customizing Universal Checkout to better fit your needs
+- 📖 Explore our [Web SDK Reference](https://www.npmjs.com/package/@primer-io/checkout-web) and [Server API Reference](https://apiref.primer.io)
+- 🤙 Reach out to us at [support@primer.io](support@primer.io) if you are facing any issues
