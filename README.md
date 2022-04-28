@@ -10,7 +10,7 @@ Example integration of Universal Checkout using the [Primer Web SDK](https://pri
 
 <h4 align="center">
 
-This is a companion project to the [Web Getting Start Guide](#).
+This is a companion project to the [Web Getting Start Guide](https://primer.io/docs/get-started/web).
 
 </h4>
 
@@ -18,7 +18,7 @@ This is a companion project to the [Web Getting Start Guide](#).
 
 ## ✅ Pre-requisites
 
-- **A Primer sandbox account** <br /> No account yet? [Create a sandbox account now!](#) 🚀
+- **A Primer sandbox account** 🚀
 
 - **A handful of programs installed on your machine** <br /> `node`, and `yarn` or `npm`, that's it! 💪
 
