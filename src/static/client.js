@@ -18,7 +18,23 @@ async function onLoaded() {
      * Implement this callback to redirect the user to an order confirmation page and fulfill the order.
      */
     onCheckoutComplete({ payment }) {
-      console.log("Checkout Complete!", payment)
+      console.log('Checkout Complete!', payment)
+    },
+
+    // Other optional options
+    style: {
+      submitButton: {
+        base: {
+          color: '#ffffff',
+          background: '#000000',
+          borderRadius: '8px',
+          boxShadow: 'none',
+        },
+        disabled: {
+          color: '#9b9b9b',
+          background: '#e1deda',
+        },
+      },
     },
   })
 }
