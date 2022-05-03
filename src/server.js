@@ -59,7 +59,7 @@ app.post("/client-session", async (req, res) => {
         lineItems: [
           {
             itemId: 'shoes-123',
-            description: "Some nice shoes!",
+            description: 'Some nice shoes!',
             amount: 2500, // Amount should be in minor units!
             quantity: 1,
           },
