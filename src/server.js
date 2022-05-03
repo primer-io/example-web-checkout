@@ -55,7 +55,7 @@ app.post("/client-session", async (req, res) => {
       // Amount set in minor units
       amount: 2500
 
-      // Check all the other options at https://apiref.primer.io/reference/create_client_side_token_client_session_post
+      // Check all the other options at https://apiref.primer.io/v2/reference/create_client_side_token_client_session_post
     }),
   }).then(data => data.json());
 
