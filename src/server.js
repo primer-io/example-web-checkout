@@ -5,9 +5,9 @@ const express = require("express");
 const fetch = require("node-fetch");
 require("dotenv").config();
 
-const PORT = process.env.PORT || 8880;
-const API_KEY = process.env.API_KEY;
-const PRIMER_API_URL = process.env.PRIMER_API_URL;
+///////////////////////////////////////////
+// ⚙️ Setup Server
+///////////////////////////////////////////
 
 const app = express();
 
@@ -21,6 +21,19 @@ app.get("/", (req, res) => {
   return res.sendFile(checkoutPage);
 });
 
+///////////////////////////////////////////
+// ✨ All the magic is here 
+//    Create a client session 
+///////////////////////////////////////////
+
+const PRIMER_API_URLS = {
+  SANDBOX: "https//api.sandbox.primer.io",
+  PRODUCTION: "https//api.sandbox.primer.io",
+}
+
+const API_KEY = process.env.API_KEY;
+const PRIMER_API_URL = PRIMER_API_URLS[process.env.PRIMER_API_ENVIRONMENT];
+
 app.post("/client-session", async (req, res) => {
   const url = `${PRIMER_API_URL}/client-session`;
 
@@ -28,7 +41,7 @@ app.post("/client-session", async (req, res) => {
     method: 'post',
     headers: {
       'Content-Type': 'application/json',
-      'X-Api-Version': '2.1',
+      'X-Api-Version': '2021-09-27',
       'X-Api-Key': API_KEY,
     },
     body: JSON.stringify({
@@ -39,17 +52,10 @@ app.post("/client-session", async (req, res) => {
       // 3-character Currency Code used for all the amount of this session
       currencyCode: 'EUR',
 
-      // Line items for this session
-      // If your checkout does not have line items:
-      //  > Pass a single line item with the total amount!
-      lineItems: [
-        {
-          itemId: 'shoes-123',
-          description: 'shoes',
-          amount: 2500, // Amount should be in minor units!
-          quantity: 1,
-        },
-      ],
+      // Amount set in minor units
+      amount: 2500
+
+      // Check all the other options at https://apiref.primer.io/reference/create_client_side_token_client_session_post
     }),
   }).then(data => data.json());
 
@@ -57,6 +63,10 @@ app.post("/client-session", async (req, res) => {
 });
 
 
+///////////////////////////////////////////
+// 🏃‍♂️ Run Server
+///////////////////////////////////////////
 
+const PORT = process.env.PORT || 8880;
 console.log(`Checkout server listening on port ${PORT}.\nYou can now view the Checkout in a web browser at http://localhost:${PORT}`);
 app.listen(PORT);
