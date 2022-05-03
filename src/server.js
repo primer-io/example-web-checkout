@@ -1,9 +1,9 @@
 // This example is built using express
-const path = require("path");
-const bodyParser = require("body-parser");
-const express = require("express");
-const fetch = require("node-fetch");
-require("dotenv").config();
+const path = require('path');
+const bodyParser = require('body-parser');
+const express = require('express');
+const fetch = require('node-fetch');
+require('dotenv').config();
 
 ///////////////////////////////////////////
 // ⚙️ Setup Server
@@ -11,13 +11,13 @@ require("dotenv").config();
 
 const app = express();
 
-const staticDir = path.join(__dirname, "static");
-const checkoutPage = path.join(__dirname, "static", "checkout.html");
+const staticDir = path.join(__dirname, 'static');
+const checkoutPage = path.join(__dirname, 'static', 'checkout.html');
 
 app.use(bodyParser.json());
-app.use("/static", express.static(staticDir));
+app.use('/static', express.static(staticDir));
 
-app.get("/", (req, res) => {
+app.get('/', (req, res) => {
   return res.sendFile(checkoutPage);
 });
 
@@ -27,14 +27,14 @@ app.get("/", (req, res) => {
 ///////////////////////////////////////////
 
 const PRIMER_API_URLS = {
-  SANDBOX: "https://api.sandbox.primer.io",
-  PRODUCTION: "https://api.primer.io",
+  SANDBOX: 'https://api.sandbox.primer.io',
+  PRODUCTION: 'https://api.primer.io',
 }
 
 const API_KEY = process.env.API_KEY;
 const PRIMER_API_URL = PRIMER_API_URLS[process.env.PRIMER_API_ENVIRONMENT];
 
-app.post("/client-session", async (req, res) => {
+app.post('/client-session', async (req, res) => {
   const url = `${PRIMER_API_URL}/client-session`;
 
   const response = await fetch(url, {
