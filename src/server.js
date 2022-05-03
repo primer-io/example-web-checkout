@@ -28,7 +28,7 @@ app.get("/", (req, res) => {
 
 const PRIMER_API_URLS = {
   SANDBOX: "https://api.sandbox.primer.io",
-  PRODUCTION: "https://api.sandbox.primer.io",
+  PRODUCTION: "https://api.primer.io",
 }
 
 const API_KEY = process.env.API_KEY;
