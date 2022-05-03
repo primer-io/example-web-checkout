@@ -27,8 +27,8 @@ app.get("/", (req, res) => {
 ///////////////////////////////////////////
 
 const PRIMER_API_URLS = {
-  SANDBOX: "https//api.sandbox.primer.io",
-  PRODUCTION: "https//api.sandbox.primer.io",
+  SANDBOX: "https://api.sandbox.primer.io",
+  PRODUCTION: "https://api.sandbox.primer.io",
 }
 
 const API_KEY = process.env.API_KEY;
@@ -41,7 +41,7 @@ app.post("/client-session", async (req, res) => {
     method: 'post',
     headers: {
       'Content-Type': 'application/json',
-      'X-Api-Version': '2021-09-27',
+      'X-Api-Version': '2021-10-19',
       'X-Api-Key': API_KEY,
     },
     body: JSON.stringify({
@@ -52,8 +52,19 @@ app.post("/client-session", async (req, res) => {
       // 3-character Currency Code used for all the amount of this session
       currencyCode: 'EUR',
 
-      // Amount set in minor units
-      amount: 2500
+      order: {
+        // Line items for this session
+        // If your checkout does not have line items:
+        //  > Pass a single line item with the total amount!
+        lineItems: [
+          {
+            itemId: 'shoes-123',
+            description: "Some nice shoes!",
+            amount: 2500, // Amount should be in minor units!
+            quantity: 1,
+          },
+        ],
+      }
 
       // Check all the other options at https://apiref.primer.io/v2/reference/create_client_side_token_client_session_post
     }),
