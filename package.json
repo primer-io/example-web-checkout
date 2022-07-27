@@ -5,7 +5,7 @@
   "main": "server.js",
   "license": "MIT",
   "scripts": {
-    "start": "node ./src/server.js"
+    "start": "nodemon ./src/server.js"
   },
   "dependencies": {
     "body-parser": "^1.19.0",
@@ -13,5 +13,19 @@
     "express": "^4.17.1",
     "node-fetch": "^2.6.1",
     "path": "^0.12.7"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.19"
+  },
+  "nodemonConfig": {
+    "ignore": [
+      "node_modules/*"
+    ],
+    "watch": [
+      ".env",
+      "*.js",
+      "*.css",
+      "*.html"
+    ]
   }
 }
