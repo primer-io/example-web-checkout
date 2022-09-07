@@ -88,7 +88,7 @@ You should see Universal Checkout appear with the payment methods configured on 
 
 ## 👀 What's next?
 
-- ✨ Explore the capabilities of your [Dashboard](https//dashboard.sandbox.primer.io/)
+- ✨ Explore the capabilities of your [Dashboard](https://dashboard.sandbox.primer.io/)
 - 📚 Take a look at our [Documentation](https://primer.io/docs) to customize Universal Checkout to better fit your needs
 - 📖 Explore our [Web SDK Reference](https://www.npmjs.com/package/@primer-io/checkout-web) and [Server API Reference](https://apiref.primer.io)
 - 🎒 Learn more about [how Primer works](https://primer.io/docs/how-primer-works)
