@@ -93,3 +93,4 @@ You should see Universal Checkout appear with the payment methods configured on 
 - 📖 Explore our [Web SDK Reference](https://www.npmjs.com/package/@primer-io/checkout-web) and [Server API Reference](https://apiref.primer.io)
 - 🎒 Learn more about [how Primer works](https://primer.io/docs/how-primer-works)
 - 🤙 Reach out to us at [support@primer.io](mailto:support@primer.io) if you are facing any issues
+- 🤘 Join our developer community on [Discord](https://bit.ly/3xBTFl6)
