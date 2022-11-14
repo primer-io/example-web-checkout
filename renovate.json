@@ -1,0 +1,11 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": ["config:base", ":label(renovate)"],
+  "regexManagers": [
+    {
+      "fileMatch": "https:\\/\\/sdk.primer.io\\/web\\/v(?P<currentValue>[\\d\\.]+)",
+      "depNameTemplate": "@primer-io/checkout-web",
+      "datasourceTemplate": "npm"
+    }
+  ]
+}
