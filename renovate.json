@@ -3,6 +3,7 @@
   "extends": ["config:base", ":label(renovate)"],
   "regexManagers": [
     {
+      "fileMatch": [".*\\.html$"],
       "matchStrings": ["https:\\/\\/sdk.primer.io\\/web\\/v(?P<currentValue>[\\d\\.]+)"],
       "depNameTemplate": "@primer-io/checkout-web",
       "datasourceTemplate": "npm"
