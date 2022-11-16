@@ -31,7 +31,7 @@ This is a companion project to the [Web Getting Start Guide](https://primer.io/d
 Clone this repository:
 
 ```bash
-git clone git@github.com:primer-io/example-web-checkout.git
+git clone https://github.com/primer-io/example-web-checkout.git
 cd ./example-web-checkout
 ```
 
@@ -40,18 +40,20 @@ Then install the dependencies using `yarn` or `npm`:
 ```bash
 # With yarn
 yarn
+```
 
+```bash
 # With npm
 npm i
 ```
 
 ### 🔑 Set up the API Key
 
-Grab your API Key, or create a new one, from the [Primer Dashboard](https://dashboard.sandbox.primer.io/developers/apiKeys).
+Grab your API Key, or create a new one, from the [Primer Dashboard](https://sandbox-dashboard.primer.io/developers/apiKeys).
 
 ![Dashboard API Key](./images/apikey.png)
 
-Clone `env.example` and name the cloned file `.env`.
+Copy `env.example` and name the file `.env`.
 
 ```
 cp env.example .env
