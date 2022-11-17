@@ -52,6 +52,22 @@ app.post('/client-session', async (req, res) => {
       // 3-character Currency Code used for all the amount of this session
       currencyCode: 'EUR',
 
+      customer: {
+        emailAddress: "test@test.com",
+        mobileNumber: "+6588889999",
+        firstName: "John",
+        lastName: "Smith",
+        billingAddress: {
+          firstName: "John",
+          lastName: "Smith",
+          postalCode: "CB94BQ",
+          addressLine1: "47A",
+          countryCode: "CL",
+          city: "Cambridge",
+          state: "Cambridgeshire"
+        }
+      },
+
       order: {
         // Line items for this session
         // If your checkout does not have line items:
