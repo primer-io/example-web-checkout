@@ -52,6 +52,7 @@ app.post('/client-session', async (req, res) => {
       // 3-character Currency Code used for all the amount of this session
       currencyCode: 'EUR',
 
+      // emailAddress and billingAddress are required for 3DS
       customer: {
         emailAddress: "test@test.com",
         mobileNumber: "+6588889999",
