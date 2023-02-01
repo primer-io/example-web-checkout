@@ -41,7 +41,7 @@ app.post('/client-session', async (req, res) => {
     method: 'post',
     headers: {
       'Content-Type': 'application/json',
-      'X-Api-Version': '2.1',
+      'X-Api-Version': '2.2',
       'X-Api-Key': API_KEY,
     },
     body: JSON.stringify({
