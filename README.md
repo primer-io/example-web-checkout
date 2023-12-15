@@ -76,6 +76,17 @@ yarn start
 npm start
 ```
 
+### 🏃‍♂️ Run the server with Docker 🐳
+
+```
+docker-compose up
+
+# or
+
+docker compose up
+
+```
+
 The server is deployed on port `8880` by default. You can change the port by setting the `PORT` environment variable in the `.env` file.
 
 This server uses [`nodemon`](https://www.npmjs.com/package/nodemon) under the hood to automatically re-run the server when a change to the source files or `.env` is made.
